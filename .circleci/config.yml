@@ -33,10 +33,9 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
         
-  deployment:
-      preprod:
-        branch: master
-        commands:
-          - git remote add preprod dokku@52.162.165.186:node-js-sample
-          - git push preprod master
-
+deployment:
+  production:
+    branch: master
+    commands:
+      - git remote add dokku dokku@52.162.165.186:node-js-sample
+      - git push dokku master

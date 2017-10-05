@@ -37,5 +37,5 @@ deployment:
   production:
     branch: master
     commands:
-      - git remote add dokku dokku@52.162.165.186:node-js-sample
-      - git push dokku master
+      - git remote add production dokku@52.162.165.186:node-js-sample
+      - git push production master

@@ -32,9 +32,8 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
           
-      - run:
-          name: deploy
-          commands:
-                - echo Deploying master    
-                - git remote add dokku dokku@40.76.21.62:node-sample
-                - git push dokku master
+deployment:  
+  production:
+    branch: master    
+    commands:
+      - ./deploy.sh

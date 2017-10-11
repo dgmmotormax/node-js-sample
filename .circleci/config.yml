@@ -19,8 +19,8 @@ jobs:
           command: git remote add dokku dokku@40.76.21.62:node-sample
       - run:
         name: Fix host authenticity for 40.76.21.62
-        command: |
-          ssh-keyscan 40.76.21.62 >> ~/.ssh/known_hosts
+          command: |
+            ssh-keyscan 40.76.21.62 >> ~/.ssh/known_hosts
         
       - run:
           command: git push dokku master

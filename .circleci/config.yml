@@ -16,4 +16,4 @@ jobs:
       - checkout
       
       - run:
-        command: echo "TESTE"
+        command: ./deploy.sh

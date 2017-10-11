@@ -16,6 +16,7 @@ jobs:
       - checkout
       
       - run:
-          commands: 
-          - git remote add dokku dokku@40.76.21.62:node-sample
-          - git push dokku master
+          command: git remote add dokku dokku@40.76.21.62:node-sample
+          
+      - run:
+          command: git push dokku master

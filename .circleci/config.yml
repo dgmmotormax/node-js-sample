@@ -34,7 +34,7 @@ jobs:
           
       - run:
           name: deploy
-          command:
+          commands:
                 - echo Deploying master    
                 - git remote add dokku dokku@40.76.21.62:node-sample
                 - git push dokku master

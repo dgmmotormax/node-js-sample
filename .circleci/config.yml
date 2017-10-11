@@ -32,7 +32,6 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
           
-      - deploy
       -run:
           name: deploy
           command:

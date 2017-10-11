@@ -32,7 +32,7 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
           
-      -run:
+      - run:
           name: deploy
           command:
                 - echo Deploying master    
